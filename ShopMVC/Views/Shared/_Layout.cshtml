@@ -6,27 +6,99 @@
     <title>@ViewData["Title"] - ShopMVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/fc6874d9fd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ShopMVC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+       @*@ <div class="row justify-content-end" id="settings">
+
+            <div class="m-1 p-1 pr-2" id="account"><a href="#"><i class="fas fa-user-alt"></i> Moje konto</a></div>
+            <div class="m-1 p-1 pr-4" id="cart"> <a href="#"><i class="fas fa-shopping-cart"></i> 0 PLN</a></div>
+
+            <div class="dropdown m-1 p-1 pr2">
+                <a class="dropdown-toggle" href="#" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PL
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">ENG</a>
+                    <a class="dropdown-item" href="#">GER</a>
+                    <a class="dropdown-item" href="#">FR</a>
                 </div>
             </div>
+            <div class="dropdown m-1 p-1 pr-1 pl-1">
+                <a class="dropdown-toggle" href="#" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PLN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">GBP</a>
+                    <a class="dropdown-item" href="#">EUR</a>
+                    <a class="dropdown-item" href="#">USD</a>
+                </div>
+            </div>
+
+        </div> *@
+        <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid header">
+                
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sklep</a>
+                
+                
+                <div class="align-self-start">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-md-inline-flex flex-md-row-reverse" >
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Zdrowa żwyność</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Odżywki</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Suplementy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Słodycze i przekąski</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Promocje</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class=" align-self-end col-md-3" id="settings">
+
+                    <div class="m-1 p-1 pr-2" id="account"><a href="#"><i class="fas fa-user-alt"></i> Zaloguj się/Załóż konto</a></div>
+                    <div class="m-1 p-1 pr-4" id="cart"> <a href="#"><i class="fas fa-shopping-cart"></i> 0 PLN</a></div>
+
+                   @* <div class="dropdown m-1 p-1 pr2">
+                        <a class="dropdown-toggle" href="#" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PL
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">ENG</a>
+                            <a class="dropdown-item" href="#">GER</a>
+                            <a class="dropdown-item" href="#">FR</a>
+                        </div>
+                    </div>
+                    <div class="dropdown m-1 p-1 pr-1 pl-1">
+                        <a class="dropdown-toggle" href="#" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PLN
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">GBP</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                        </div>
+                    </div>*@
+
+                    </div>
+                </div>
+            
         </nav>
     </header>
     <div class="container">
